@@ -21,7 +21,7 @@
 
 ## 📝 note
 
-- [阿里与无延迟菜单](https://liuyib.github.io/demo/note/aliyun-menu-list/)
+- [阿里云无延迟菜单](https://liuyib.github.io/demo/note/aliyun-menu-list/)
 - [纯 CSS 实现进度条效果](https://liuyib.github.io/demo/note/progress-bar/)
 - [纯 CSS 实现下划线跟随鼠标效果](https://liuyib.github.io/demo/note/underline-follow/)
 
