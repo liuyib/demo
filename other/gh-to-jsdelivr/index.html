@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Github To JsDelivr</title>
+  <title>GitHub To JsDelivr</title>
   <style>
     body {
       padding: 0 20px;
@@ -13,21 +13,39 @@
 
     input {
       outline: none;
+      line-height: 1.5;
     }
 
     .tips {
       color: #8a2be2;
       text-align: center;
-      padding: 20px 0;
+      margin: 20px 0 20px 0;
+    }
+
+    .eg {
+      margin-bottom: 10px;
+    }
+
+    .blue {
+      color: lightskyblue;
+    }
+
+    .dark {
+      color: #000;
+    }
+
+    .suchas {
+      display: flex;
+      margin-bottom: 40px;
+    }
+
+    .label {
+      width: 70px;
     }
 
     .wrapper {
       display: flex;
       margin-bottom: 20px;
-    }
-
-    .wrapper .label {
-      width: 70px;
     }
 
     .wrapper input {
@@ -43,6 +61,15 @@
 
 <body>
   <div class="tips">Convert GitHub link to a CDN link</div>
+
+  <div class="eg">e.g.</div>
+  <div class="suchas blue">
+    <div class="label dark">Before:</div>
+    <div>https://github.com/liuyib/demo/blob/master/other/gh-to-jsdelivr/index.js</div>
+
+    <div class="label dark">After:</div>
+    <div>https://cdn.jsdelivr.net/gh/liuyib/demo/other/gh-to-jsdelivr/index.js</div>
+  </div>
 
   <div class="wrapper">
     <div class="label">Source:</div>

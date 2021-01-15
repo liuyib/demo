@@ -31,3 +31,4 @@
 - [清除字符串中的 HTML 标签](https://liuyib.github.io/demo/other/clear-html-tag/)
 - [图片懒加载](https://liuyib.github.io/demo/other/lazyload/)
 - [原生 JS 实现放大镜效果](https://liuyib.github.io/demo/other/magnifying-glass/)
+- [GitHub 链接转 JSDelivr CDN](https://liuyib.github.io/demo/other/gh-to-jsdelivr)
