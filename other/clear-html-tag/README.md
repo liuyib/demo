@@ -6,8 +6,8 @@ Demo体验地址：[https://liuyib.github.io/pages/clearHtmlTag/](https://liuyib
 
 PC端预览
 
-![](./imgs/pc_show.png)
+![](./assets/pc_show.png)
 
 移动端预览
 
-<img src="./imgs/mobile_show.jpg"  width="450" height="1500">
+<img src="./assets/mobile_show.jpg"  width="450" height="1500">

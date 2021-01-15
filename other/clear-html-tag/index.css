@@ -16,7 +16,7 @@ label {
 
 body {
   line-height: 1;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -89,7 +89,7 @@ body {
 }
 
 .title_after::before {
-  content: '🔎';
+  content: "🔎";
 }
 
 .main_title {
@@ -135,7 +135,7 @@ body {
 }
 
 .bottom::before {
-  content: '';
+  content: "";
   display: block;
   height: 1px;
   background: #e9e9e9;
@@ -230,7 +230,7 @@ body {
 
 /* 点击按钮特效 */
 .myAntd_btn_click::after {
-  content: '';
+  content: "";
   z-index: -1;
   position: absolute;
   left: 0;
@@ -321,7 +321,7 @@ body {
 .myAntd_checkbox_inner::after {
   z-index: 2;
   display: table;
-  content: ' ';
+  content: " ";
   position: absolute;
   left: 4.99px;
   top: 1.88px;
@@ -347,7 +347,7 @@ body {
 
 .myAntd_checkbox_checked .myAntd_checkbox_inner::after {
   display: table;
-  content: ' ';
+  content: " ";
   -webkit-transition: all 0.3s cubic-bezier(0.12, 0.4, 0.29, 1.46), opacity 0.1s;
   transition: all 0.3s cubic-bezier(0.12, 0.4, 0.29, 1.46), opacity 0.1s;
   -webkit-transform: rotate(45deg) scale(1);
@@ -356,7 +356,7 @@ body {
 }
 
 .myAntd_checkbox_checked::after {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 0;
   left: 0;

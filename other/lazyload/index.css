@@ -4,7 +4,8 @@
 }
 
 .message {
-  padding: .5rem
+  padding: 0.5rem;
+  text-align: center;
 }
 
 #wrapper {

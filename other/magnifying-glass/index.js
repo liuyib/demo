@@ -1,20 +1,20 @@
-window.onload = function() {
-  var oSmallImg = document.getElementById('small_img');
-  var oLargeImg = document.getElementById('large_img');
-  var oMagnifyingGlass = document.getElementById('magnifying_glass');
-  var oSmallImgWrapper = document.getElementById('small_img_wrapper');
+window.onload = function () {
+  var smallImg = document.getElementById("small_img");
+  var largeImg = document.getElementById("large_img");
+  var magnifyingGlass = document.getElementById("magnifying_glass");
+  var smallImgWrapper = document.getElementById("small_img_wrapper");
 
-  oSmallImgWrapper.onmouseover = function () {
-    oLargeImg.style.display = 'block';
-    oMagnifyingGlass.style.display = 'block';
+  smallImgWrapper.onmouseover = function () {
+    largeImg.style.display = "block";
+    magnifyingGlass.style.display = "block";
   };
-  oSmallImgWrapper.onmouseout = function () {
-    oLargeImg.style.display = 'none';
-    oMagnifyingGlass.style.display = 'none';
+  smallImgWrapper.onmouseout = function () {
+    largeImg.style.display = "none";
+    magnifyingGlass.style.display = "none";
   };
 
-  oSmallImgWrapper.onmousemove = function (ev) {
-    var _event = ev || event;
+  smallImgWrapper.onmousemove = function (ev) {
+    var _event = ev || window.event;
 
     // 放大镜的移动范围
     var GLASS_MOVE_LEFT = 0;
@@ -23,11 +23,11 @@ window.onload = function() {
     var GLASS_MOVE_BOTTOM = 100;
 
     // 放大的比例
-    var oScaleSize = oLargeImg.offsetWidth / oSmallImg.offsetWidth;
-    
+    var oScaleSize = largeImg.offsetWidth / smallImg.offsetWidth;
+
     // 获取鼠标坐标
-    var oGlassLeft = _event.clientX - oSmallImgWrapper.offsetLeft - 50;
-    var oGlassTop = _event.clientY - oSmallImgWrapper.offsetTop - 50;
+    var oGlassLeft = _event.clientX - smallImgWrapper.offsetLeft - 50;
+    var oGlassTop = _event.clientY - smallImgWrapper.offsetTop - 50;
 
     // 限制放大镜移动
     if (oGlassLeft <= GLASS_MOVE_LEFT) {
@@ -43,15 +43,15 @@ window.onload = function() {
     }
 
     // 大图片的坐标（由于前面限制了放大镜的移动，所以这里大图片移动时相应的受到限制）
-    var oBigImgLeft = - oGlassLeft * oScaleSize;
-    var oBigImgTop= - oGlassTop * oScaleSize;
+    var oBigImgLeft = -oGlassLeft * oScaleSize;
+    var oBigImgTop = -oGlassTop * oScaleSize;
 
     // 放大镜移动
-    oMagnifyingGlass.style.left = oGlassLeft + 'px';
-    oMagnifyingGlass.style.top = oGlassTop + 'px';
+    magnifyingGlass.style.left = oGlassLeft + "px";
+    magnifyingGlass.style.top = oGlassTop + "px";
 
     // 大图片移动
-    oLargeImg.style.left = oBigImgLeft + 'px';
-    oLargeImg.style.top = oBigImgTop + 'px';
+    largeImg.style.left = oBigImgLeft + "px";
+    largeImg.style.top = oBigImgTop + "px";
   };
 };

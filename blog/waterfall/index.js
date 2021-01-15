@@ -41,26 +41,26 @@ window.onload = function () {
 
   // 模拟获取到的 Ajax 数据
   var newImgs = [
-    './imgs/1.jpg',
-    './imgs/2.jpg',
-    './imgs/3.jpg',
-    './imgs/4.jpg',
-    './imgs/5.jpg',
-    './imgs/6.jpg',
-    './imgs/7.jpg',
-    './imgs/8.jpg',
-    './imgs/9.jpg',
-    './imgs/10.jpg',
-    './imgs/11.jpg',
-    './imgs/12.jpg',
-    './imgs/13.jpg',
-    './imgs/14.jpg',
-    './imgs/15.jpg',
-    './imgs/16.jpg',
-    './imgs/17.jpg',
-    './imgs/18.jpg',
-    './imgs/19.jpg',
-    './imgs/20.jpg'
+    './assets/1.jpg',
+    './assets/2.jpg',
+    './assets/3.jpg',
+    './assets/4.jpg',
+    './assets/5.jpg',
+    './assets/6.jpg',
+    './assets/7.jpg',
+    './assets/8.jpg',
+    './assets/9.jpg',
+    './assets/10.jpg',
+    './assets/11.jpg',
+    './assets/12.jpg',
+    './assets/13.jpg',
+    './assets/14.jpg',
+    './assets/15.jpg',
+    './assets/16.jpg',
+    './assets/17.jpg',
+    './assets/18.jpg',
+    './assets/19.jpg',
+    './assets/20.jpg'
   ];
   var bFlag = false;
 
