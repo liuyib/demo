@@ -19,11 +19,7 @@
     .tips {
       color: #8a2be2;
       text-align: center;
-      margin: 20px 0 20px 0;
-    }
-
-    .eg {
-      margin-bottom: 10px;
+      margin: 20px 0 30px 0;
     }
 
     .blue {
@@ -34,9 +30,18 @@
       color: #000;
     }
 
-    .suchas {
+    .eg-tips {
+      margin-bottom: 8px;
+    }
+
+    .eg-ctn {
       display: flex;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+    }
+
+    .eg-item {
+      display: flex;
+      margin: auto;
     }
 
     .label {
@@ -62,13 +67,17 @@
 <body>
   <div class="tips">🔗 GitHub link to JSDelivr CDN</div>
 
-  <div class="eg">e.g.</div>
-  <div class="suchas blue">
-    <div class="label dark">Before:</div>
-    <div>https://github.com/liuyib/demo/blob/master/other/gh-to-jsdelivr/index.js</div>
+  <div class="eg-tips">e.g.</div>
+  <div class="eg-ctn blue">
+    <div class="eg-item">
+      <div class="label dark">Before:</div>
+      <div>https://github.com/liuyib/demo/blob/master/other/gh-to-jsdelivr/index.js</div>
+    </div>
 
-    <div class="label dark">After:</div>
-    <div>https://cdn.jsdelivr.net/gh/liuyib/demo/other/gh-to-jsdelivr/index.js</div>
+    <div class="eg-item">
+      <div class="label dark">After:</div>
+      <div>https://cdn.jsdelivr.net/gh/liuyib/demo/other/gh-to-jsdelivr/index.js</div>
+    </div>
   </div>
 
   <div class="wrapper">
