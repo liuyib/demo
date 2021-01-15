@@ -1,29 +1,21 @@
-window.onload = function() {
-  var name = document.querySelector("#gh-name");
-  var repo = document.querySelector("#gh-repo");
-  var bran = document.querySelector("#gh-bran");
-  var path = document.querySelector("#gh-path");
-  var result = document.querySelector("#result");
+document.addEventListener("DOMContentLoaded", function () {
+  var source = document.querySelector(".source");
+  var output = document.querySelector(".output");
 
-  var n = "";
-  var r = "";
-  var b = "";
-  var p = "";
+  source.addEventListener("input", function () {
+    var origin = source.value;
+    var k = origin.split(/\//gim);
 
-  name.oninput = function() {
-    n = this.value;
-  };
-  repo.oninput = function() {
-    r = this.value;
-  };
-  bran.oninput = function() {
-    b = this.value;
-  };
-  path.oninput = function() {
-    p = this.value;
-  };
-  document.oninput = function() {
-    var str = `https://cdn.jsdelivr.net/gh/${n}/${r}@${b}${p}`;
-    result.value = str;
-  };
-};
+    // The file path exists after the seventh '/'
+    // e.g.
+    //       12          3      4    5    6      7
+    //       ↓↓          ↓      ↓    ↓    ↓      ↓
+    // https://github.com/liuyib/demo/blob/master/other/gh-to-jsdelivr/index.js
+    //                                           ╰─────────────┬──────────────╯
+    //                                                     file path
+    var path = [...k.slice(7)].join("/");
+    var result = `https://cdn.jsdelivr.net/gh/${k[3]}/${k[4]}/${path}`;
+
+    output.value = result;
+  });
+});
